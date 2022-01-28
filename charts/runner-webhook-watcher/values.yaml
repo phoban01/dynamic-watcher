@@ -1,0 +1,19 @@
+replicaCount: 1
+
+serviceAccount:
+  name: runner-webhook-watcher
+  annotations: {}
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 128Mi
+
+webhook:
+  url: "https://example.org/github-webhook/actions-runner"
+  events:
+  - "workflow_job"

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: dynamic-runner-webhook-watcher
+description: A Helm chart for Dynamic Webhook creation
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
